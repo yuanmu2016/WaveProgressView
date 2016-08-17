@@ -156,7 +156,7 @@ public class WaveProgressView extends View {
 
         int waveNum = width/((int)mWaveHalfWidth*4)+1;
         int multiplier = 0;
-        for(int i =0;i<waveNum*3;i++){
+        for(int i =0;i<waveNum;i++){
          mPath.quadTo(mWaveHalfWidth*(multiplier+1)-distance,CurY-mWaveHight,mWaveHalfWidth*(multiplier+2)-distance,CurY);
          mPath.quadTo(mWaveHalfWidth*(multiplier+3)-distance,CurY+mWaveHight,mWaveHalfWidth*(multiplier+4)-distance,CurY);
          multiplier+=4;
