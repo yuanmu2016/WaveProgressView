@@ -162,8 +162,8 @@ public class WaveProgressView extends View {
          multiplier+=4;
         }
         distance +=mWaveHalfWidth/mWaveSpeed;
-        distance = distance%(mWaveHalfWidth*4);
-
+        distance = distance%(mWaveHalfWidth*4*waveNum - width);
+ 
         mPath.lineTo(width,height);
         mPath.lineTo(0,height);
         mPath.close();
